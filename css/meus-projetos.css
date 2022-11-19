@@ -1,0 +1,61 @@
+.meus-projetos {
+  background: var(--cinza);
+  padding: 2rem 0;
+}
+
+.meus-projetos__projeto {
+  background: var(--azul-escuro);
+  width: 95vw;
+  padding: 1rem 0;
+  margin: 2rem auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.504);
+}
+
+.meus-projetos__projeto--texto {
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+
+.meus-projetos__botao {
+  display: block;
+  border: 1px solid var(--vinho);
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--fonte-principal);
+  color: var(--vinho);
+  background: var(--branco);
+  font-weight: 700;
+  text-decoration: none;
+  width: 15rem;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .meus-projetos__projeto {
+    width: 70vw;
+  }
+  
+  .meus-projetos__botao:hover {
+    background: var(--vinho);
+    color: var(--branco);
+  }
+
+  .meus-projetos__botao:active {
+    opacity: 0.7;
+  }
+}
+
